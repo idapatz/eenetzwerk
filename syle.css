@@ -1,0 +1,231 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Hintergrundfarbe auf Schwarz geändert */
+    color: #fff; /* Textfarbe auf Weiß gesetzt */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Zentrierung der Navigation */
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Sanfter Übergang der Farbe */
+}
+
+nav ul li a:hover {
+    color: #8fe009; /* Farbe bei Hover auf Grün ändern */
+}
+
+.landing {
+    display: flex; /* Flexbox verwenden für die Anordnung von Text und Bild */
+    justify-content: space-between; /* Platz zwischen Text und Bild */
+    align-items: center; /* Zentrierung des Bildes auf gleicher Höhe wie der Text */
+    padding: 100px 20px;
+    max-width: 1200px; /* Breite des Containers erhöhen, um mehr Platz zu schaffen */
+    margin: 0 auto; /* Zentriert den gesamten Container */
+}
+
+.text-container {
+    max-width: 600px; /* Maximale Breite für den Text */
+}
+
+.landing h1, .landing p {
+    margin: 0; /* Entfernt die Standardmargen */
+}
+
+.landing h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px; /* Abstand unter der Überschrift */
+    max-width: 500px; /* Maximalbreite für den Text */
+}
+
+.landing p {
+    line-height: 1.6;
+    font-size: 18px;
+    margin-bottom: 40px; /* Abstand unter dem Absatz */
+    max-width: 500px; /* Maximalbreite für den Text */
+}
+
+.landing-image {
+    width: auto; /* Breite automatisch anpassen */
+    height: 300%; /* Die Höhe des Bildes auf 300% der aktuellen Höhe setzen */
+    border-radius: 8px; /* Abgerundete Ecken */
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-start; /* Buttons linksbündig ausrichten */
+    gap: 20px;
+}
+
+.btn {
+    padding: 15px 30px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-green {
+    background-color: #8fe009;
+    color: #000;
+}
+
+.btn-outline {
+    border: 2px solid #8fe009; /* Rahmenfarbe in ein leuchtendes Grün ändern */
+    color: #8fe009; /* Textfarbe ebenfalls in ein leuchtendes Grün ändern */
+    background: none; /* Hintergrund transparent lassen */
+}
+
+.btn:hover {
+    opacity: 0.8;
+    transition: opacity 0.3s ease; /* Sanfter Übergang der Opazität */
+}
+
+section {
+    margin: 20px 0;
+}
+
+h2 {
+    color: #fff; /* Überschriftenfarbe auf Weiß gesetzt */
+}
+
+iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+.kurs-container {
+    display: flex; /* Flexbox verwenden, um Module in Kästchen darzustellen */
+    flex-wrap: wrap; /* Automatisches Umwickeln der Module, wenn Platz benötigt wird */
+    gap: 40px; /* Abstand zwischen den Modulen */
+    margin: 20px; /* Abstand zum Rand hinzufügen */
+    justify-content: space-around; /* Zentriere die Kästchen in der Kursseite */
+}
+
+.kurs-box {
+    background-color: #111; /* Dunkles Grau für den Hintergrund des Kästchens */
+    border-radius: 10px; /* Abgerundete Ecken für den Kasten */
+    padding: 20px;
+    text-align: center; /* Zentriere den Text innerhalb des Kästchens */
+    width: 300px; /* Feste Breite für jedes Modul */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Sanfte Übergänge bei Hover */
+}
+
+.kurs-box:hover {
+    transform: scale(1.05); /* Leichtes Vergrößern bei Hover */
+    opacity: 0.9; /* Leichte Abnahme der Deckkraft bei Hover */
+}
+
+.kurs-container h1, .kurs-box h2, .kurs-box p {
+    text-align: center; /* Text zentrieren */
+    margin-bottom: 20px; /* Abstand zwischen den Elementen */
+}
+
+.kurs-container h2 {
+    font-size: 28px; /* Größe der Unterüberschriften */
+    margin-top: 40px; /* Abstand oberhalb der Module */
+}
+
+.kurs-container p {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #fff; /* Textfarbe im Footer auf Weiß gesetzt */
+}
+
+/* Modal Container */
+.modal {
+    display: none; /* Standardmäßig ausgeblendet */
+    position: fixed;
+    z-index: 1000; /* Höhere Z-Index für Überlagerung */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Dunklerer transparenter Hintergrund */
+    justify-content: center; /* Zentriert den Modal-Inhalt horizontal */
+    align-items: center; /* Zentriert den Modal-Inhalt vertikal */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fff; /* Hintergrundfarbe für das Modal */
+    padding: 20px;
+    border-radius: 10px; /* Abgerundete Ecken */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Schatten für Tiefe */
+    width: 90%; /* Breite anpassen */
+    max-width: 400px; /* Maximale Breite */
+    text-align: center;
+}
+
+/* Form Styling */
+.modal-content form {
+    display: flex;
+    flex-direction: column; /* Elemente untereinander anordnen */
+    gap: 15px; /* Abstand zwischen den Feldern */
+}
+
+.modal-content input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #888;
+    width: 100%; /* Volle Breite */
+    box-sizing: border-box; /* Verhindert Überlaufen */
+}
+
+.modal-content button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #8fe009;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Button auf volle Breite */
+}
+
+.modal-content button:hover {
+    background-color: #679519; /* Etwas dunklere Farbe bei Hover */
+}
+
+/* Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #8fe009; /* Grüne Farbe bei Hover */
+    text-decoration: none;
+    cursor: pointer;
+}
