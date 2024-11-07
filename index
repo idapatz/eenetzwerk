@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KI-Workshop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li> <!-- Hier den Link zur Landingpage -->
+                <li><a href="about.html">About</a></li> <!-- Hier den Link zur About-Page -->
+                <li><a href="kurs.html">Kurs</a></li> <!-- Link zum Kurs -->
+                <li><a href="kontakt.html">Kontakt</a></li> <!-- Link zur Kontakt-Seite -->
+            </ul>
+        </nav>
+    </header>
+
+    <section class="landing">
+        <div class="text-container">
+            <h1>Decode the Hype: <br>Lerne, was KI wirklich kann</h1>
+            <p>Künstliche Intelligenz verändert die Art, wie wir arbeiten. 
+            Mit unserem KI-Workshop erlernst du praxisnahe Fähigkeiten, 
+            die dir helfen, im Berufsalltag effizienter und smarter zu arbeiten. 
+            </p>
+            <div class="buttons">
+                <a href="#register" class="btn btn-green" onclick="openModal()">Registrierung</a>
+                <a href="#login" class="btn btn-outline" onclick="openLoginModal()">Login</a>
+            </div>
+        </div>
+        <img src="2Home.jpg" alt="Menschen am Computer" class="landing-image"> <!-- Bild hier eingefügt -->
+    </section>
+
+    <!-- Modal für die Registrierung -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Registrierung</h2>
+            <form onsubmit="registerUser(); return false;">
+                <input type="email" id="modalEmail" placeholder="E-Mail-Adresse" required />
+                <input type="password" id="modalPassword" placeholder="Passwort" required />
+                <button type="submit" class="btn btn-green">Registrieren</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal für den Login -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close close-login" onclick="closeLoginModal()">&times;</span>
+            <h2>Login</h2>
+            <form onsubmit="loginUser(); return false;">
+                <input type="email" id="loginEmail" placeholder="E-Mail-Adresse" required />
+                <input type="password" id="loginPassword" placeholder="Passwort" required />
+                <button type="submit" class="btn btn-green">Einloggen</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Ida Patzelt</p>
+    </footer>
+    
+    <script src="scripts.js"></script>
+    <!-- Firebase SDK und Initialisierung -->
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-analytics.js";
+        import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-auth.js";
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyBvck5m_S1pUWykSNfCesJ0Eu6wYE1XgjM",
+            authDomain: "ki-workshop-f800c.firebaseapp.com",
+            projectId: "ki-workshop-f800c",
+            storageBucket: "ki-workshop-f800c.appspot.com",
+            messagingSenderId: "635249479399",
+            appId: "1:635249479399:web:cc707c3dd455fcd140dc42",
+            measurementId: "G-PYJT9ZWQ41"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+        const auth = getAuth(app);
+
+        // Funktion für die Registrierung
+        function registerUser() {
+            const email = document.getElementById('modalEmail').value;
+            const password = document.getElementById('modalPassword').value;
+
+            createUserWithEmailAndPassword(auth, email, password)
+                .then((userCredential) => {
+                    const user = userCredential.user;
+                    alert('User registered successfully: ' + user.email);
+                    closeModal();
+                })
+                .catch((error) => {
+                    const errorMessage = error.message;
+                    alert('Error: ' + errorMessage);
+                });
+        }
+
+        // Funktion für den Login
+        function loginUser() {
+            const email = document.getElementById('loginEmail').value;
+            const password = document.getElementById('loginPassword').value;
+
+            signInWithEmailAndPassword(auth, email, password)
+                .then((userCredential) => {
+                    const user = userCredential.user;
+                    alert('Erfolgreich angemeldet: ' + user.email);
+                    window.location.href = 'dashboard.html'; // Weiterleitung zur Startseite mit Dashboard
+                })
+                .catch((error) => {
+                    const errorMessage = error.message;
+                    alert('Fehler: ' + errorMessage);
+                });
+        }
+
+        // Funktionen zum Öffnen und Schließen des Modals
+        function openModal() {
+            document.getElementById('registerModal').style.display = 'flex';
+        }
+
+        function closeModal() {
+            document.getElementById('registerModal').style.display = 'none';
+        }
+
+        function openLoginModal() {
+            document.getElementById('loginModal').style.display = 'flex';
+        }
+
+        function closeLoginModal() {
+            document.getElementById('loginModal').style.display = 'none';
+        }
+
+        // Schließen des Modals, wenn außerhalb geklickt wird
+        window.onclick = function(event) {
+            const registerModal = document.getElementById('registerModal');
+            const loginModal = document.getElementById('loginModal');
+            if (event.target === registerModal) {
+                closeModal();
+            } else if (event.target === loginModal) {
+                closeLoginModal();
+            }
+        }
+    </script>
+</body>
+</html>
