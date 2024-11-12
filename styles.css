@@ -134,7 +134,7 @@ nav ul li a {
 }
 
 .benefits li::before {
-    content: '\u2B55';
+    content: '\2714'; /* Unicode für Haken im Kreis */
     color: #333;
     background-color: #fff;
     border: 2px solid #333;
@@ -142,7 +142,6 @@ nav ul li a {
     padding: 4px;
     margin-right: 10px;
 }
-
 
 .hero-images {
     display: flex;
@@ -152,7 +151,6 @@ nav ul li a {
 
 .hero-images img {
     max-width: 100%;
-    clip-path: path('M 75 0 C 100 0 100 25 100 50 C 100 75 75 100 50 100 C 25 100 0 75 0 50 C 0 25 25 0 50 0 Z');
     box-shadow: none;
 }
 
