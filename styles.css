@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: #fff;
+    background-color: #ffffff;
     color: #333;
     line-height: 1.6;
 }
@@ -17,7 +17,7 @@ p, li, a {
 }
 
 a {
-    color: #007bff;
+    color: #333;
     text-decoration: none;
 }
 
@@ -31,7 +31,7 @@ a:hover {
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-    background-color: #fff;
+    background-color: #ffffff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -60,14 +60,15 @@ nav ul li a {
 }
 
 .register-button {
-    background-color: #00c853;
-    color: #fff;
-    border: none;
-    transition: background-color 0.3s ease;
+    background-color: transparent;
+    color: #00bfa5;
+    border: 2px solid #00bfa5;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .register-button:hover {
-    background-color: #009624;
+    background-color: #00bfa5;
+    color: #ffffff;
 }
 
 /* Hero Section */
@@ -76,7 +77,7 @@ nav ul li a {
     justify-content: space-between;
     align-items: center;
     padding: 50px;
-    background-color: #fff;
+    background-color: #ffffff;
     margin-bottom: 40px;
 }
 
@@ -99,15 +100,15 @@ nav ul li a {
 .cta-button {
     display: inline-block;
     padding: 15px 30px;
-    background-color: #000;
-    color: #fff;
+    background-color: #000000;
+    color: #ffffff;
     border-radius: 5px;
     font-weight: 700;
     transition: background-color 0.3s ease;
 }
 
 .cta-button:hover {
-    background-color: #333;
+    background-color: #333333;
 }
 
 .benefits {
@@ -125,22 +126,21 @@ nav ul li a {
 
 .benefits li::before {
     content: '\2713';
-    color: #00c853;
+    color: #00bfa5;
     margin-right: 10px;
     font-weight: bold;
 }
 
 .hero-images {
     display: flex;
-    flex-direction: column;
     gap: 20px;
     max-width: 45%;
 }
 
 .hero-images img {
     max-width: 100%;
-    border-radius: 30%;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    clip-path: circle(50% at 50% 50%);
+    box-shadow: none;
 }
 
 /* Services Section */
@@ -153,21 +153,23 @@ nav ul li a {
 }
 
 .service-item {
-    background-color: #f0fdf4;
+    background-color: #f9f9f9;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: none;
     text-align: center;
-    transition: transform 0.3s ease;
+    transition: none;
+    color: #666;
 }
 
 .service-item:hover {
-    transform: translateY(-5px);
+    transform: none;
 }
 
 .service-item h3 {
     margin-bottom: 15px;
-    color: #007bff;
+    color: #222;
+    font-weight: 500;
 }
 
 .service-item a {
@@ -184,8 +186,8 @@ nav ul li a {
 
 /* Footer */
 .footer-content {
-    background-color: #333;
-    color: #fff;
+    background-color: #333333;
+    color: #ffffff;
     text-align: center;
     padding: 20px;
 }
