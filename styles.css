@@ -129,10 +129,13 @@ nav ul li a {
 }
 
 .benefits li::before {
-    content: '\2713';
-    color: #00bfa5;
+    content: '\2714';
+    color: #333;
     margin-right: 10px;
     font-weight: bold;
+    border: 2px solid #333;
+    border-radius: 50%;
+    padding: 2px;
 }
 
 .hero-images {
@@ -158,7 +161,7 @@ nav ul li a {
 
 .service-item {
     background-color: #ffffff;
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
     box-shadow: none;
     text-align: center;
@@ -168,7 +171,7 @@ nav ul li a {
 
 .service-item h3 {
     margin-bottom: 15px;
-    color: #007bff;
+    color: #222;
     font-weight: 700;
     font-size: 1.2em;
 }
@@ -183,6 +186,10 @@ nav ul li a {
 
 .service-item a:hover {
     color: #0056b3;
+}
+
+.service-item svg {
+    opacity: 0.1;
 }
 
 /* Footer */
