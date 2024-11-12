@@ -134,14 +134,15 @@ nav ul li a {
 }
 
 .benefits li::before {
-    content: '\2714';
+    content: '\u2B55';
     color: #333;
-    margin-right: 10px;
-    font-weight: bold;
+    background-color: #fff;
     border: 2px solid #333;
     border-radius: 50%;
-    padding: 2px;
+    padding: 4px;
+    margin-right: 10px;
 }
+
 
 .hero-images {
     display: flex;
