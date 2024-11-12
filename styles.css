@@ -54,20 +54,24 @@ nav ul li a {
     color: #333;
 }
 
-.login-button, .register-button {
+.login-button {
     padding: 8px 15px;
+    border: 2px solid #00c853;
+    color: #00c853;
     border-radius: 5px;
+    background-color: #ffffff;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .register-button {
-    background-color: transparent;
-    color: #00bfa5;
-    border: 2px solid #00bfa5;
+    background-color: #00c853;
+    color: #ffffff;
+    border: none;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .register-button:hover {
-    background-color: #00bfa5;
+    background-color: #009624;
     color: #ffffff;
 }
 
@@ -126,7 +130,7 @@ nav ul li a {
 
 .benefits li::before {
     content: '\2713';
-    color: #00bfa5;
+    color: #00c853;
     margin-right: 10px;
     font-weight: bold;
 }
@@ -139,7 +143,7 @@ nav ul li a {
 
 .hero-images img {
     max-width: 100%;
-    clip-path: circle(50% at 50% 50%);
+    clip-path: path('M 75 0 C 100 0 100 25 100 50 C 100 75 75 100 50 100 C 25 100 0 75 0 50 C 0 25 25 0 50 0 Z');
     box-shadow: none;
 }
 
@@ -153,23 +157,24 @@ nav ul li a {
 }
 
 .service-item {
-    background-color: #f9f9f9;
+    background-color: #e6fff0;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: none;
-    color: #666;
+    transition: box-shadow 0.3s ease;
+    color: #444;
 }
 
 .service-item:hover {
-    transform: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .service-item h3 {
     margin-bottom: 15px;
-    color: #222;
-    font-weight: 500;
+    color: #007bff;
+    font-weight: 700;
+    font-size: 1.25em;
 }
 
 .service-item a {
@@ -189,10 +194,10 @@ nav ul li a {
     background-color: #333333;
     color: #ffffff;
     text-align: center;
-    padding: 20px;
+    padding: 30px;
 }
 
 .footer-content p {
     margin: 0;
-    font-size: 0.9em;
+    font-size: 0.85em;
 }
