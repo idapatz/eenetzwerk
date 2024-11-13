@@ -217,9 +217,11 @@ nav ul li a.button-register:hover {
 }
 
 .service-item img {
-    align-self: center; /* Zentriert das Bild */
-    width: 120px; /* Breite des Bilds */
+    align-self: flex-end; /* Bild wird nach rechts ausgerichtet */
+    margin-bottom: 15px; /* Abstand zum unteren Teil, um eine saubere Trennung zum Text zu gewährleisten */
+   width: 120px !important; /* Neue Breite des Bildes (doppelt so groß wie vorher 60px), erzwungen */
     height: auto; /* Beibehaltung des Seitenverhältnisses */
+    object-fit: contain; /* Beibehaltung des Seitenverhältnisses im definierten Rahmen */
     content: url('Heizung.png'); /* Ersetzt alle Bilder mit Heizung.png */
 }
 
