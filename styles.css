@@ -173,11 +173,20 @@ nav ul li a.button-register:hover {
     color: #ffffff; /* Textfarbe beim Hover */
 }
 
+/* Services Section */
+.services {
+    display: flex; /* Flexbox für Ausrichtung */
+    justify-content: space-evenly; /* Gleichmäßiger Abstand zwischen den Kästen */
+    gap: 40px; /* Abstand zwischen Kästen */
+    padding: 40px 50px; /* Innenabstand */
+    flex-wrap: wrap; /* Zeilenumbruch bei kleineren Bildschirmen */
+}
+
 /* Allgemeine Stile für Service-Kästen */
 .service-item {
     display: flex; /* Flexbox für Inhalt */
     flex-direction: column; /* Vertikale Anordnung */
-    align-items: flex-start; /* Links ausrichten */
+    align-items: flex-start; /* Linksbündige Ausrichtung der Inhalte */
     padding: 20px; /* Innenabstand */
     background-color: #e6f9f4; /* Hintergrundfarbe */
     border-radius: 15px; /* Abgerundete Ecken */
@@ -195,9 +204,10 @@ nav ul li a.button-register:hover {
 
 .service-item-header {
     display: flex; /* Flexbox für Header */
+    flex-direction: row; /* Elemente nebeneinander anordnen */
     justify-content: space-between; /* Platz zwischen Überschrift und Bild */
     width: 100%; /* Volle Breite des Headers */
-    align-items: flex-start; /* Bild und Text auf gleicher Höhe links ausrichten */
+    align-items: center; /* Bild und Text auf gleicher Höhe vertikal zentrieren */
     margin-bottom: 10px; /* Abstand nach unten */
 }
 
@@ -226,7 +236,7 @@ nav ul li a.button-register:hover {
     font-weight: 700; /* Fettdruck */
     text-decoration: underline; /* Unterstreichung */
     transition: color 0.3s ease; /* Übergang bei Hover */
-    text-align: left; /* Linksbündig */
+    text-align: left; /* Linksbündige Ausrichtung */
     margin-top: auto; /* Abstand oben */
     display: inline-block; /* Inline-Block für den Link */
 }
@@ -234,6 +244,7 @@ nav ul li a.button-register:hover {
 .service-item a:hover {
     color: #0056b3; /* Farbe beim Hover */
 }
+
 
 
 /* Allgemeine Stile */
