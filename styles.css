@@ -570,6 +570,26 @@ ul li {
 }
 
 
+.intro {
+    padding: 40px;
+    background-color: #f8f8f8; /* Heller Hintergrund für besseren Kontrast */
+    text-align: center;
+}
+
+.intro h1 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
 
 
 
