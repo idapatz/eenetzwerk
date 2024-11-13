@@ -219,7 +219,8 @@ nav ul li a.button-register:hover {
 }
 
 .service-link {
-    color: #007bff; /* Linkfarbe */
+    color: #222; /* Linkfarbe */
+    font-family: 'Roboto', sans-serif;
     font-weight: 700; /* Fettdruck */
     text-decoration: none; /* Entfernt Unterstreichung */
     display: inline-flex; /* Flexbox für Link und Pfeil */
