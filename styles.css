@@ -76,7 +76,6 @@ nav ul li a {
 }
 
 nav ul {
-    list-style-type: none; /* Entfernt Aufzählungszeichen */
     padding: 0; /* Entfernt Standard-Innenabstand */
     margin: 0; /* Entfernt Standard-Abstand */
     display: flex; /* Flexbox für horizontale Ausrichtung */
