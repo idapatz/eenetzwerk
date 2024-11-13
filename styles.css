@@ -13,15 +13,14 @@ h1, h3 {
 }
 
 p, li, a {
-    text-decoration: underline;
     color: #333;
     font-weight: 400;
 }
 
 a {
-    text-decoration: underline;
     color: #333;
     font-weight: 400;
+    text-decoration: none;
 }
 
 a:hover {
@@ -47,9 +46,9 @@ nav ul {
 }
 
 nav ul li a {
-    text-decoration: underline;
     color: #333;
     font-weight: 700;
+    text-decoration: none;
     transition: color 0.3s ease;
 }
 
@@ -59,8 +58,8 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    padding: 60px 80px;
-    margin-bottom: 40px;
+    padding: 40px 60px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -74,7 +73,7 @@ nav ul li a:hover {
 
 .hero-content h1 {
     margin-bottom: 20px;
-    font-size: 2.5em;
+    font-size: 3em;
     line-height: 1.2;
 }
 
@@ -94,6 +93,7 @@ nav ul li a:hover {
     font-weight: 700;
     text-decoration: none;
     transition: background-color 0.3s ease;
+    border: 1px solid #000;
 }
 
 .cta-button:hover {
@@ -103,8 +103,8 @@ nav ul li a:hover {
 /* Services Section */
 .services {
     display: flex;
-    justify-content: center; /* Kästen zentrieren */
-    gap: 40px; /* Gleichmäßiger Abstand zwischen den Kästen */
+    justify-content: space-evenly; /* Gleichmäßiger Abstand zwischen den Kästen */
+    gap: 20px;
     padding: 40px 50px;
     flex-wrap: wrap; /* Zeilenumbruch bei kleineren Bildschirmgrößen */
 }
@@ -112,15 +112,16 @@ nav ul li a:hover {
 /* Allgemeine Stile für Service-Kästen */
 .service-item {
     display: flex;
-    padding: 30px; /* Einheitliches Padding */
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px; /* Einheitliches Padding */
     background-color: #e6f9f4;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Einheitlicher Box-Shadow */
     width: 100%;
-    max-width: 320px;
+    max-width: 300px;
     margin: 20px;
     transition: transform 0.3s ease;
-    align-items: center;
 }
 
 .service-item:hover {
@@ -129,7 +130,7 @@ nav ul li a:hover {
 }
 
 .service-item img {
-    margin-left: auto;
+    align-self: center;
     width: 50px;
     height: auto;
     content: url('Heizung.png'); /* Ersetzt alle Bilder in den Kästen durch Heizung.png */
@@ -139,8 +140,7 @@ nav ul li a:hover {
     margin-bottom: 10px;
     color: #222;
     font-weight: 700;
-    font-size: 1.2em;
-    margin-right: auto;
+    font-size: 1.5em;
 }
 
 .service-item p {
@@ -151,14 +151,16 @@ nav ul li a:hover {
 }
 
 .service-item a {
-    text-decoration: underline;
-    color: #333;
+    color: #007bff;
     font-weight: 700;
+    text-decoration: underline;
     transition: color 0.3s ease;
+    text-align: left;
 }
 
 .service-item a:hover {
-    color: #007bff; /* Farbe beim Hover-Status */
+    color: #0056b3; /* Farbe beim Hover-Status */
+    text-decoration: underline;
 }
 
 .service-item a::after {
