@@ -207,6 +207,9 @@ nav ul li a.button-register:hover {
     align-items: center; /* Zentrierte Inhalte */
     gap: 15px; /* Abstand zwischen Icon und Text */
     margin-bottom: 10px; /* Abstand unten */
+    justify-content: space-between; /* Platz zwischen Bild und Text */
+    align-items: center; /* Zentriert den Text und das Bild vertikal */
+    width: 100%; /* Volle Breite des Headers */
 }
 
 .service-item-header h3 {
