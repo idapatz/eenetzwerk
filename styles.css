@@ -637,6 +637,69 @@ ul li {
 .hidden {
     visibility: hidden;
 }
+.for-energy-advisors {
+    padding: 40px;
+    background-color: #f0f8ff;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.for-energy-advisors h2 {
+    font-size: 2em;
+    color: #222;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.for-energy-advisors p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.advisor-benefits {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.benefit {
+    background-color: #e6f9f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    flex: 1 1 30%;
+}
+
+.benefit h3 {
+    font-size: 1.4em;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.benefit p {
+    font-size: 1em;
+    color: #555;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #00c897;
+    color: #ffffff;
+    border-radius: 5px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #00a57a;
+}
 
 
 /* Footer */
