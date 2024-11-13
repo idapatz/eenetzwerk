@@ -46,7 +46,7 @@ nav ul li a {
 
 /* Register-Button spezifisch stylen */
 .register-button {
-    background-color: #00c569; /* Hintergrundfarbe */
+    background-color: #698F44; /* Hintergrundfarbe */
     color: #fff; /* Textfarbe */
     padding: 10px 20px; /* Innenabstand */
     border-radius: 5px; /* Abgerundete Ecken */
@@ -58,7 +58,7 @@ nav ul li a {
 }
 
 .register-button:hover {
-    background-color: #008f50; /* Hintergrundfarbe beim Hover */
+    background-color: #557037; /* Hintergrundfarbe beim Hover */
 }
 
 .login-button:hover {
@@ -159,7 +159,7 @@ nav ul li a.button-register:hover {
     display: inline-block; /* Inline-Block-Element */
     margin-bottom: 30px; /* Abstand unten */
     padding: 15px 30px; /* Innenabstand */
-    background-color: #00c897; /* Hintergrundfarbe */
+    background-color: #698F44; /* Hintergrundfarbe */
     color: #ffffff; /* Textfarbe */
     border-radius: 5px; /* Abgerundete Ecken */
     font-weight: 700; /* Fettdruck */
@@ -169,7 +169,7 @@ nav ul li a.button-register:hover {
 }
 
 .cta-button:hover {
-    background-color: #00a57a; /* Hintergrundfarbe beim Hover */
+    background-color: #557037; /* Hintergrundfarbe beim Hover */
     color: #ffffff; /* Textfarbe beim Hover */
 }
 
@@ -376,7 +376,7 @@ nav ul li a.button-login {
 }
 
 nav ul li a.button-register {
-    background-color: #00c897; /* Hintergrundfarbe */
+    background-color: #698F44; /* Hintergrundfarbe */
     color: #ffffff; /* Textfarbe */
     padding: 10px 20px; /* Innenabstand */
     border-radius: 5px; /* Abgerundete Ecken */
@@ -389,7 +389,7 @@ nav ul li a.button-register {
 
 nav ul li a:hover {
     color: #ffffff; /* Textfarbe beim Hover */
-    background-color: #333; /* Hintergrundfarbe beim Hover */
+    background-color: #557037; /* Hintergrundfarbe beim Hover */
 }
 
 nav ul li a.button-login:hover {
