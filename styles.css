@@ -218,7 +218,7 @@ nav ul li a.button-register:hover {
 
 .service-item img {
     align-self: center; /* Zentriert das Bild */
-    width: 60px; /* Breite des Bilds */
+    width: 120px; /* Breite des Bilds */
     height: auto; /* Beibehaltung des Seitenverhältnisses */
     content: url('Heizung.png'); /* Ersetzt alle Bilder mit Heizung.png */
 }
