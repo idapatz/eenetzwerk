@@ -253,6 +253,261 @@ nav ul li a.button-register:hover {
     font-size: 1.1em; /* Schriftgröße des Pfeils */
 }
 
+/* Allgemeine Stile */
+body {
+    margin: 0; /* Entfernt Standardabstand */
+    font-family: 'Roboto', sans-serif; /* Setzt die Schriftart auf Roboto */
+    background-color: #ffffff; /* Hintergrundfarbe der Seite */
+    color: #333; /* Textfarbe */
+    line-height: 1.6; /* Zeilenhöhe */
+}
+
+h1, h3 {
+    font-weight: 700; /* Fettdruck für Überschriften */
+    color: #222; /* Textfarbe für Überschriften */
+}
+
+p, li, a {
+    color: #333; /* Standardtextfarbe für Absätze, Listenelemente und Links */
+    font-weight: 400; /* Normalgewicht für Text */
+}
+
+a {
+    color: #333; /* Linkfarbe */
+    font-weight: 400; /* Normalgewicht für Links */
+    text-decoration: none; /* Entfernt Unterstreichung bei Links */
+}
+
+a:hover {
+    text-decoration: underline; /* Unterstreicht Links beim Hover */
+}
+
+/* Allgemeine Linkstile, z. B. für 'Für Gewerke' */
+nav ul li a {
+    color: #333; /* Linkfarbe im Navigationsmenü */
+    font-weight: 700; /* Fettdruck für Links */
+    text-decoration: none; /* Entfernt Unterstreichung */
+    transition: color 0.3s ease; /* Farbwechsel beim Hover */
+}
+
+/* Login-Button spezifisch stylen */
+.login-button {
+    border: 1px solid #333; /* Rahmenfarbe */
+    color: #333; /* Textfarbe */
+    padding: 10px 20px; /* Innenabstand */
+    border-radius: 5px; /* Abgerundete Ecken */
+    background-color: transparent; /* Transparenter Hintergrund */
+}
+
+/* Register-Button spezifisch stylen */
+.register-button {
+    background-color: #00c569; /* Hintergrundfarbe */
+    color: #fff; /* Textfarbe */
+    padding: 10px 20px; /* Innenabstand */
+    border-radius: 5px; /* Abgerundete Ecken */
+    border: none; /* Kein Rahmen */
+    font-weight: bold; /* Fettdruck */
+    display: inline-block; /* Inline-Block für Ausrichtung */
+    text-align: center; /* Zentrierter Text */
+    transition: background-color 0.3s ease; /* Farbwechsel beim Hover */
+}
+
+.register-button:hover {
+    background-color: #008f50; /* Hintergrundfarbe beim Hover */
+}
+
+.login-button:hover {
+    background-color: #f0f0f0; /* Hintergrundfarbe beim Hover */
+}
+
+/* Header */
+.header-container {
+    padding: 20px 50px; /* Innenabstand */
+    display: flex; /* Flexbox für Ausrichtung */
+    justify-content: space-between; /* Elemente gleichmäßig verteilen */
+    align-items: center; /* Elemente vertikal zentrieren */
+    background-color: #ffffff; /* Hintergrundfarbe */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Schatteneffekt */
+}
+
+nav ul {
+    list-style-type: none; /* Entfernt Aufzählungszeichen */
+    padding: 0; /* Entfernt Standard-Innenabstand */
+    margin: 0; /* Entfernt Standard-Abstand */
+    display: flex; /* Flexbox für horizontale Ausrichtung */
+    gap: 20px; /* Abstand zwischen Listenelementen */
+    align-items: center; /* Vertikale Zentrierung der Elemente */
+}
+
+nav ul li a {
+    color: #333; /* Linkfarbe */
+    font-weight: 700; /* Fettdruck */
+    text-decoration: none; /* Keine Unterstreichung */
+    padding: 5px 15px; /* Innenabstand */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Übergang bei Hover */
+}
+
+nav ul li a.button-login {
+    color: #333; /* Textfarbe für Login-Button */
+    border: 1px solid #333; /* Rahmen */
+    padding: 10px 20px; /* Innenabstand */
+    border-radius: 5px; /* Abgerundete Ecken */
+    background-color: transparent; /* Transparenter Hintergrund */
+}
+
+nav ul li a.button-register {
+    background-color: #00c897; /* Hintergrundfarbe */
+    color: #ffffff; /* Textfarbe */
+    padding: 10px 20px; /* Innenabstand */
+    border-radius: 5px; /* Abgerundete Ecken */
+    border: none; /* Kein Rahmen */
+    display: flex; /* Flexbox für Inhalte */
+    align-items: center; /* Zentriert Inhalte */
+    gap: 5px; /* Abstand zwischen Icon und Text */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Farbwechsel bei Hover */
+}
+
+nav ul li a:hover {
+    color: #ffffff; /* Textfarbe beim Hover */
+    background-color: #333; /* Hintergrundfarbe beim Hover */
+}
+
+nav ul li a.button-login:hover {
+    background-color: #333; /* Hintergrundfarbe für Login-Button beim Hover */
+    color: #ffffff; /* Textfarbe beim Hover */
+}
+
+nav ul li a.button-register:hover {
+    background-color: #00a57a; /* Hintergrundfarbe für Register-Button beim Hover */
+    color: #ffffff; /* Textfarbe beim Hover */
+}
+
+/* Hero Section */
+.hero {
+    padding: 40px 60px; /* Innenabstand */
+    margin: 0 auto; /* Zentriert die Sektion */
+    margin-bottom: 20px; /* Abstand unten */
+    display: flex; /* Flexbox für Ausrichtung */
+    justify-content: center; /* Horizontale Zentrierung */
+    align-items: center; /* Vertikale Zentrierung */
+    flex-wrap: wrap; /* Zeilenumbruch bei Bedarf */
+    background-color: #ffffff; /* Hintergrundfarbe */
+}
+
+.hero-content {
+    max-width: 60%; /* Maximale Breite */
+    text-align: left; /* Linksbündiger Text */
+}
+
+.hero-content h1 {
+    margin-bottom: 20px; /* Abstand unten */
+    font-size: 3em; /* Schriftgröße */
+    line-height: 1.2; /* Zeilenhöhe */
+}
+
+.hero-content p {
+    margin-bottom: 20px; /* Abstand unten */
+    font-size: 1.2em; /* Schriftgröße */
+    color: #555; /* Textfarbe */
+}
+
+.cta-button {
+    display: inline-block; /* Inline-Block-Element */
+    margin-bottom: 30px; /* Abstand unten */
+    padding: 15px 30px; /* Innenabstand */
+    background-color: #00c897; /* Hintergrundfarbe */
+    color: #ffffff; /* Textfarbe */
+    border-radius: 5px; /* Abgerundete Ecken */
+    font-weight: 700; /* Fettdruck */
+    text-decoration: none; /* Keine Unterstreichung */
+    transition: background-color 0.3s ease; /* Übergang bei Hover */
+    border: none; /* Kein Rahmen */
+}
+
+.cta-button:hover {
+    background-color: #00a57a; /* Hintergrundfarbe beim Hover */
+    color: #ffffff; /* Textfarbe beim Hover */
+}
+
+/* Services Section */
+.services {
+    display: flex; /* Flexbox für Ausrichtung */
+    justify-content: space-evenly; /* Gleichmäßiger Abstand zwischen den Kästen */
+    gap: 40px; /* Abstand zwischen Kästen */
+    padding: 40px 50px; /* Innenabstand */
+    flex-wrap: wrap; /* Zeilenumbruch bei kleineren Bildschirmen */
+}
+
+/* Allgemeine Stile für Service-Kästen */
+.service-item {
+    display: flex; /* Flexbox für Inhalt */
+    flex-direction: column; /* Vertikale Anordnung */
+    align-items: flex-start; /* Links ausrichten */
+    padding: 20px; /* Innenabstand */
+    background-color: #e6f9f4; /* Hintergrundfarbe */
+    border-radius: 15px; /* Abgerundete Ecken */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Schatteneffekt */
+    width: 100%; /* Volle Breite */
+    max-width: 300px; /* Maximale Breite */
+    margin: 20px; /* Außenabstand */
+    transition: transform 0.3s ease; /* Übergang für Hover-Effekt */
+}
+
+.service-item:hover {
+    transform: translateY(-5px); /* Verschiebt Element nach oben */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Verstärkter Schatten beim Hover */
+}
+
+.service-item-header {
+    display: flex; /* Flexbox für Header */
+    align-items: center; /* Zentrierte Inhalte */
+    gap: 15px; /* Abstand zwischen Icon und Text */
+    margin-bottom: 10px; /* Abstand unten */
+}
+
+.service-item-header h3 {
+    color: #222; /* Textfarbe */
+    font-weight: 700; /* Fettdruck */
+    font-size: 1.4em; /* Schriftgröße */
+    margin: 0; /* Kein Abstand */
+}
+
+.service-item img {
+    align-self: center; /* Zentriert das Bild */
+    width: 60px; /* Breite des Bilds */
+    height: auto; /* Beibehaltung des Seitenverhältnisses */
+    content: url('Heizung.png'); /* Ersetzt alle Bilder mit Heizung.png */
+}
+
+.service-item p {
+    margin-bottom: 20px; /* Abstand unten */
+    font-size: 1em; /* Schriftgröße */
+    color: #555; /* Textfarbe */
+    text-align: left; /* Linksbündiger Text */
+}
+
+.service-item a {
+    color: #007bff; /* Linkfarbe */
+    font-weight: 700; /* Fettdruck */
+    text-decoration: underline; /* Unterstreichung */
+    transition: color 0.3s ease; /* Übergang bei Hover */
+    text-align: left; /* Linksbündig */
+    margin-top: auto; /* Abstand oben */
+    display: flex; /* Flexbox für Icon und Text */
+    align-items: center; /* Vertikale Zentrierung */
+}
+
+.service-item a:hover {
+    color: #0056b3; /* Farbe beim Hover */
+    text-decoration: underline; /* Unterstreichung beibehalten */
+}
+
+.service-item a::after {
+    content: '→'; /* Pfeilsymbol nach dem Linktext */
+    margin-left: 5px; /* Abstand zwischen Text und Pfeil */
+    font-size: 1.1em; /* Schriftgröße des Pfeils */
+}
+
 /* Entfernt Standard-Aufzählungszeichen */
 /* Entfernt Standard-Aufzählungszeichen */
 ul {
@@ -286,6 +541,21 @@ ul li {
     position: absolute; /* Positioniert den Kreis links vom Text */
     left: 0; /* Setzt den Kreis linksbündig zum Listenelement */
     top: 0; /* Positioniert den Kreis oben */
+}
+
+
+
+/* Footer */
+.footer-content {
+    background-color: #333333; /* Hintergrundfarbe des Footers */
+    color: #ffffff; /* Textfarbe des Footers */
+    text-align: center; /* Zentrierter Text */
+    padding: 40px; /* Innenabstand */
+}
+
+.footer-content p {
+    margin: 0; /* Kein Außenabstand */
+    font-size: 0.8em; /* Schriftgröße */
 }
 
 
