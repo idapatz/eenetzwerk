@@ -185,7 +185,7 @@ nav ul li a.button-register:hover {
 /* Allgemeine Stile für Service-Kästen */
 .service-item {
     display: flex; /* Flexbox für Inhalt */
-    flex-direction: column; /* Vertikale Anordnung */
+    flex-direction: column; /* Elemente in einer Spalte anordnen */
     align-items: flex-start; /* Linksbündige Ausrichtung der Inhalte */
     padding: 20px; /* Innenabstand */
     background-color: #e6f9f4; /* Hintergrundfarbe */
@@ -204,10 +204,10 @@ nav ul li a.button-register:hover {
 
 .service-item-header {
     display: flex; /* Flexbox für Header */
+    justify-content: space-between; /* Platz zwischen Überschrift und Bild */
+    align-items: center; /* Vertikale Zentrierung von Überschrift und Bild */
     width: 100%; /* Volle Breite des Headers */
-    justify-content: space-between; /* Platz zwischen Text und Bild */
-    align-items: center; /* Vertikale Zentrierung der Inhalte */
-    margin-bottom: 15px; /* Abstand unten */
+    margin-bottom: 15px; /* Abstand nach unten */
 }
 
 .service-item-header h3 {
@@ -218,13 +218,13 @@ nav ul li a.button-register:hover {
 }
 
 .service-item-header img {
-    width: 120px; /* Neue Breite des Bildes */
+    width: 60px; /* Breite des Bildes */
     height: auto; /* Beibehaltung des Seitenverhältnisses */
-    margin-left: auto; /* Abstand, damit das Bild nach rechts rutscht */
+    margin-left: auto; /* Abstand, um das Bild nach rechts zu schieben */
 }
 
 .service-item p {
-    margin-bottom: 20px; /* Abstand unten */
+    margin-bottom: 15px; /* Abstand unten */
     font-size: 1em; /* Schriftgröße */
     color: #555; /* Textfarbe */
     text-align: left; /* Linksbündiger Text */
@@ -237,18 +237,11 @@ nav ul li a.button-register:hover {
     transition: color 0.3s ease; /* Übergang bei Hover */
     text-align: left; /* Linksbündige Ausrichtung */
     margin-top: auto; /* Abstand oben */
-    display: flex; /* Flexbox für Inhalt */
-    align-items: center; /* Vertikale Zentrierung */
+    display: inline-block; /* Inline-Block für den Link */
 }
 
 .service-item a:hover {
     color: #0056b3; /* Farbe beim Hover */
-}
-
-.service-item a::after {
-    content: '→'; /* Pfeilsymbol nach dem Linktext */
-    margin-left: 5px; /* Abstand zwischen Text und Pfeil */
-    font-size: 1.1em; /* Schriftgröße des Pfeils */
 }
 
 
