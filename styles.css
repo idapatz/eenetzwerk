@@ -60,7 +60,6 @@ nav ul li a {
     border-radius: 5px;
     background-color: transparent;
     color: #333;
-    background-color: transparent;
     font-weight: 700;
     transition: color 0.3s ease;
 }
@@ -70,7 +69,6 @@ nav ul li a {
     color: #333;
     padding: 10px 20px;
     border-radius: 5px;
-    border: none;
     border: none;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -134,7 +132,7 @@ nav ul li a {
 }
 
 .benefits li::before {
-    content: '\2714'; /* Unicode für Haken im Kreis */
+    content: '\2705'; /* Unicode für Haken im Kreis */
     color: #333;
     background-color: #fff;
     border: 2px solid #333;
