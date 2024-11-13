@@ -527,16 +527,18 @@ ul li {
 }
 
 /* Spezifische Stile für 'styled-list' mit Haken im Kreis */
+/* Spezifische Stile für 'styled-list' mit Haken im Kreis */
 .styled-list li::before {
     content: '\2713'; /* Unicode für ein Haken-Symbol */
-    color: white; /* Farbe des Hakens */
-    background-color: #007bff; /* Hintergrundfarbe für den Kreis */
+    color: black; /* Farbe des Hakens (schwarz) */
+    border: 2px solid black; /* Schwarzer Kreisrahmen */
+    background-color: transparent; /* Transparenter Hintergrund */
     border-radius: 50%; /* Macht den Hintergrund zu einem Kreis */
     display: inline-flex; /* Zentriert den Haken im Kreis */
     align-items: center; /* Vertikale Zentrierung des Hakens */
     justify-content: center; /* Horizontale Zentrierung des Hakens */
-    width: 20px; /* Kreisbreite */
-    height: 20px; /* Kreisbreite */
+    width: 20px; /* Breite des Kreises */
+    height: 20px; /* Höhe des Kreises */
     font-size: 14px; /* Schriftgröße des Hakens */
     font-weight: bold; /* Fettdruck für den Haken */
     margin-right: 10px; /* Abstand zwischen Haken und Text */
@@ -545,6 +547,7 @@ ul li {
     top: 50%; /* Vertikale Positionierung des Symbols */
     transform: translateY(-50%); /* Zentriert das Symbol vertikal relativ zum Listeneintrag */
 }
+
 
 
 
