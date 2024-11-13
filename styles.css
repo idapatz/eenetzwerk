@@ -89,8 +89,6 @@ nav ul li a {
     font-weight: 700; /* Fettdruck */
     text-decoration: none; /* Keine Unterstreichung */
     padding: 5px 15px; /* Innenabstand */
-    border: 1px solid #333; /* Rahmen */
-    border-radius: 5px; /* Abgerundete Ecken */
     transition: background-color 0.3s ease, color 0.3s ease; /* Übergang bei Hover */
 }
 
