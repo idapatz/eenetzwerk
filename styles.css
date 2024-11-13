@@ -123,7 +123,7 @@ nav ul li a {
 }
 
 .benefits {
-    list-style: none; /* Deaktiviert Standardaufzählung */
+    list-style: none;
     padding-left: 0;
     margin-top: 20px;
 }
@@ -136,13 +136,14 @@ nav ul li a {
 }
 
 .benefits li::before {
-    content: '\2714'; /* Unicode für Haken im Kreis */
+    content: '\2714';
     color: #333;
     border: 2px solid #333;
     border-radius: 50%;
     padding: 4px;
     margin-right: 10px;
     background-color: transparent;
+    font-weight: bold;
 }
 
 .hero-images {
@@ -156,27 +157,31 @@ nav ul li a {
     box-shadow: none;
 }
 
-//* Services Section */
+/* Services Section */
 .services {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
     padding: 0 50px;
     margin-bottom: 20px;
+    justify-items: center;
+    text-align: center;
 }
 
 .service-item {
-    background-color: #e6f9f4; /* Sanftes Mintgrün */
+    background-color: #e6f9f4;
     padding: 20px;
-    border-radius: 15px; /* Abgerundete Ecken für eine weiche Optik */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Dezenter Schatten */
-    text-align: left;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
     color: #333;
-    transition: transform 0.3s ease; /* Animierte Interaktion beim Hover */
+    transition: transform 0.3s ease;
+    width: 100%;
+    max-width: 300px;
 }
 
 .service-item:hover {
-    transform: translateY(-5px); /* Hebt den Kasten leicht an, wenn darübergefahren wird */
+    transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
@@ -204,11 +209,11 @@ nav ul li a {
 }
 
 .service-item a:hover {
-    color: #0056b3; /* Akzentfarbe beim Hover */
+    color: #0056b3;
 }
 
 .service-item a::after {
-    content: '→'; /* Pfeil-Symbol für den Link */
+    content: '→';
     margin-left: 5px;
     font-size: 1.1em;
 }
@@ -220,7 +225,6 @@ nav ul li a {
     height: auto;
     opacity: 1;
 }
-
 
 /* Footer */
 .footer-content {
