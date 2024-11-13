@@ -219,7 +219,7 @@ nav ul li a.button-register:hover {
 }
 
 .service-link {
-    color: #222; /* Linkfarbe */
+    color: #222;!important; /* Erzwingt die Verwendung dieser Farbe */
     font-family: 'Roboto', sans-serif;
     font-weight: 700; /* Fettdruck */
     text-decoration: none; /* Entfernt Unterstreichung */
