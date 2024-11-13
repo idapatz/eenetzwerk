@@ -13,10 +13,16 @@ h1, h3 {
 }
 
 p, li, a {
+    text-decoration: underline;
+    color: #333;
     font-weight: 400;
 }
 
-a {$1text-decoration: underline;$2}
+a {
+    text-decoration: underline;
+    color: #333;
+    font-weight: 400;
+}
 
 a:hover {
     text-decoration: underline;
@@ -40,7 +46,12 @@ nav ul {
     padding: 0;
 }
 
-nav ul li a {$1text-decoration: underline;$2}
+nav ul li a {
+    text-decoration: underline;
+    color: #333;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
 
 nav ul li a:hover {
     color: #007bff; /* Hover-Effekt für die Links */
@@ -139,7 +150,12 @@ nav ul li a:hover {
     text-align: left;
 }
 
-.service-item a {$1text-decoration: underline;$2}
+.service-item a {
+    text-decoration: underline;
+    color: #333;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
 
 .service-item a:hover {
     color: #007bff; /* Farbe beim Hover-Status */
