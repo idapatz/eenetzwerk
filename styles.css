@@ -65,17 +65,21 @@ nav ul li a {
 }
 
 .register-button {
-    background-color: #f2f2f2;
-    color: #333;
+    background-color: #00c897;
+    color: #ffffff;
     padding: 10px 20px;
     border-radius: 5px;
     border: none;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 5px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .register-button:hover {
-    background-color: #e0e0e0;
-    color: #333;
+    background-color: #00a57a;
+    color: #ffffff;
 }
 
 /* Hero Section */
@@ -134,13 +138,12 @@ nav ul li a {
 .benefits li::before {
     content: '\2714'; /* Unicode für Haken im Kreis */
     color: #333;
-    background-color: #fff;
     border: 2px solid #333;
     border-radius: 50%;
     padding: 4px;
     margin-right: 10px;
+    background-color: transparent;
 }
-
 
 .hero-images {
     display: flex;
@@ -163,7 +166,7 @@ nav ul li a {
 }
 
 .service-item {
-    background-color: #ffffff;
+    background-color: #e6f9f4;
     padding: 20px;
     border-radius: 10px;
     box-shadow: none;
