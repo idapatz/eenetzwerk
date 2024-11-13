@@ -104,7 +104,7 @@ nav ul li a:hover {
 .services {
     display: flex;
     justify-content: space-evenly; /* Gleichmäßiger Abstand zwischen den Kästen */
-    gap: 20px;
+    gap: 40px;
     padding: 40px 50px;
     flex-wrap: wrap; /* Zeilenumbruch bei kleineren Bildschirmgrößen */
 }
@@ -131,8 +131,9 @@ nav ul li a:hover {
 
 .service-item img {
     align-self: center;
-    width: 50px;
+    width: 60px;
     height: auto;
+    margin-bottom: 20px;
     content: url('Heizung.png'); /* Ersetzt alle Bilder in den Kästen durch Heizung.png */
 }
 
@@ -140,11 +141,11 @@ nav ul li a:hover {
     margin-bottom: 10px;
     color: #222;
     font-weight: 700;
-    font-size: 1.5em;
+    font-size: 1.4em;
 }
 
 .service-item p {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     font-size: 1em;
     color: #555;
     text-align: left;
@@ -156,6 +157,9 @@ nav ul li a:hover {
     text-decoration: underline;
     transition: color 0.3s ease;
     text-align: left;
+    margin-top: auto;
+    display: flex;
+    align-items: center;
 }
 
 .service-item a:hover {
