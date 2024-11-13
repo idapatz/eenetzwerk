@@ -282,18 +282,21 @@ ul li::before {
 }
 /* Nur für Listen mit der Klasse 'styled-list' Aufzählungszeichen anzeigen */
 .styled-list li::before {
-    content: '¹4';
-    color: #333;
-    border: 2px solid #007bff;
-    border-radius: 50%;
-    padding: 3px;
-    margin-right: 10px;
-    font-weight: bold;
-    display: inline-block;
-    width: 1.5em;
-    height: 1.5em;
-    text-align: center;
-    line-height: 1.5em;
+    content: '\2713'; /* Unicode für ein Haken-Symbol */
+    color: white; /* Farbe des Hakens */
+    background-color: #007bff; /* Hintergrundfarbe für den Kreis */
+    border-radius: 50%; /* Macht den Hintergrund zu einem Kreis */
+    display: inline-flex; /* Zentriert den Haken im Kreis */
+    align-items: center; /* Vertikale Zentrierung des Hakens */
+    justify-content: center; /* Horizontale Zentrierung des Hakens */
+    width: 20px; /* Kreisbreite */
+    height: 20px; /* Kreisbreite */
+    font-size: 14px; /* Schriftgröße des Hakens */
+    font-weight: bold; /* Fettdruck für den Haken */
+    margin-right: 10px; /* Abstand zwischen Haken und Text */
+    position: absolute; /* Positioniert den Kreis links vom Text */
+    left: 0; /* Setzt den Kreis linksbündig zum Listenelement */
+    top: 0; /* Positioniert den Kreis oben */
 }
 
 
