@@ -226,6 +226,10 @@ nav ul li a {
     opacity: 1;
 }
 
+.service-item img {
+    content: url('Heizung.png'); /* Ersetzt alle Bilder in den Kästen durch Heizung.png */
+}
+
 /* Footer */
 .footer-content {
     background-color: #333333;
