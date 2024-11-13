@@ -510,6 +510,7 @@ nav ul li a.button-register:hover {
 
 /* Entfernt Standard-Aufzählungszeichen */
 /* Entfernt Standard-Aufzählungszeichen */
+/* Entfernt Standard-Aufzählungszeichen */
 ul {
     list-style: none;
     padding: 0;
@@ -522,6 +523,8 @@ ul li {
     color: #333;
     display: flex;
     align-items: center;
+    padding-left: 35px; /* Platz für das Symbol vor dem Text */
+    position: relative; /* Notwendig für die Positionierung des Pseudo-Elements */
 }
 
 /* Spezifische Stile für 'styled-list' mit Haken im Kreis */
@@ -540,8 +543,10 @@ ul li {
     margin-right: 10px; /* Abstand zwischen Haken und Text */
     position: absolute; /* Positioniert den Kreis links vom Text */
     left: 0; /* Setzt den Kreis linksbündig zum Listenelement */
-    top: 0; /* Positioniert den Kreis oben */
+    top: 50%; /* Vertikale Positionierung des Symbols */
+    transform: translateY(-50%); /* Zentriert das Symbol vertikal relativ zum Listeneintrag */
 }
+
 
 
 
