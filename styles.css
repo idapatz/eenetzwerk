@@ -431,23 +431,6 @@ nav ul li a.button-register:hover {
     color: #555; /* Textfarbe */
 }
 
-.cta-button {
-    display: inline-block; /* Inline-Block-Element */
-    margin-bottom: 30px; /* Abstand unten */
-    padding: 15px 30px; /* Innenabstand */
-    background-color: #00c897; /* Hintergrundfarbe */
-    color: #ffffff; /* Textfarbe */
-    border-radius: 5px; /* Abgerundete Ecken */
-    font-weight: 700; /* Fettdruck */
-    text-decoration: none; /* Keine Unterstreichung */
-    transition: background-color 0.3s ease; /* Übergang bei Hover */
-    border: none; /* Kein Rahmen */
-}
-
-.cta-button:hover {
-    background-color: #00a57a; /* Hintergrundfarbe beim Hover */
-    color: #ffffff; /* Textfarbe beim Hover */
-}
 
 /* Services Section */
 .services {
@@ -686,20 +669,6 @@ ul li {
     color: #555;
 }
 
-.cta-button {
-    display: inline-block;
-    padding: 15px 30px;
-    background-color: #00c897;
-    color: #ffffff;
-    border-radius: 5px;
-    font-weight: 700;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #00a57a;
-}
 
 .testimonials {
     padding: 60px;
@@ -844,76 +813,6 @@ ul li {
     transition: transform 0.3s ease;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #355e3b; /* Dunkles Grün als Hintergrund */
-    color: white;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.journey-section {
-    text-align: center;
-    padding: 40px;
-}
-
-.journey-section h2 {
-    font-size: 2em;
-    font-weight: bold;
-    margin-bottom: 40px;
-}
-
-.journey-steps {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    max-width: 900px;
-    margin: 0 auto;
-    gap: 20px;
-}
-
-.step {
-    text-align: center;
-    flex: 1;
-}
-
-.step .icon {
-    background-color: #4c7c4c; /* Dunkleres Grün für Icon Hintergrund */
-    color: white;
-    font-size: 1.5em;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    margin: 0 auto 15px auto;
-}
-
-.step h3 {
-    font-size: 1.2em;
-    margin: 10px 0 5px;
-    font-weight: bold;
-}
-
-.step p {
-    font-size: 0.9em;
-    color: #d9d9d9;
-}
-
-.step.active .icon {
-    background-color: #ffffff; /* Helles Grün für aktive Icon Hintergrund */
-    color: #4c7c4c; /* Dunkles Grün für aktives Icon */
-}
-
-.step.active h3, 
-.step.active p {
-    color: white;
-}
 
 
 /* Footer */
