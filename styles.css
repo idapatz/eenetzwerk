@@ -218,6 +218,31 @@ nav ul li a.button-register:hover {
     margin: 0; /* Kein Abstand */
 }
 
+.service-link {
+    color: #007bff; /* Linkfarbe */
+    font-weight: 700; /* Fettdruck */
+    text-decoration: none; /* Entfernt Unterstreichung */
+    display: inline-flex; /* Flexbox für Link und Pfeil */
+    align-items: center; /* Zentriert den Pfeil vertikal mit dem Text */
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Übergangseffekt für Farbe und Unterstreichung */
+}
+
+.service-link:hover {
+    color: #0056b3; /* Farbe beim Hover */
+    text-decoration: underline; /* Unterstreichung beim Hover */
+}
+
+.service-link::after {
+    content: '→'; /* Pfeilsymbol nach dem Linktext */
+    margin-left: 5px; /* Abstand zwischen Text und Pfeil */
+    font-size: 1.2em; /* Schriftgröße des Pfeils etwas größer als der Text */
+    transition: transform 0.3s ease; /* Übergangseffekt für den Pfeil */
+}
+
+.service-link:hover::after {
+    transform: translateX(3px); /* Pfeil bewegt sich leicht nach rechts beim Hover */
+}
+
 .service-item-header img {
     width: 40px; /* Neue Breite des Bildes */
     height: auto; /* Beibehaltung des Seitenverhältnisses */
