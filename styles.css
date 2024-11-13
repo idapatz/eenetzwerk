@@ -186,7 +186,7 @@ nav ul li a.button-register:hover {
 .service-item {
     display: flex; /* Flexbox für Inhalt */
     flex-direction: column; /* Vertikale Anordnung */
-    align-items: flex-start; /* Links ausrichten */
+    align-items: flex-start; /* Linksbündige Ausrichtung der Inhalte */
     padding: 20px; /* Innenabstand */
     background-color: #e6f9f4; /* Hintergrundfarbe */
     border-radius: 15px; /* Abgerundete Ecken */
@@ -204,12 +204,10 @@ nav ul li a.button-register:hover {
 
 .service-item-header {
     display: flex; /* Flexbox für Header */
-    align-items: center; /* Zentrierte Inhalte */
-    gap: 15px; /* Abstand zwischen Icon und Text */
-    margin-bottom: 10px; /* Abstand unten */
-    justify-content: space-between; /* Platz zwischen Bild und Text */
-    align-items: center; /* Zentriert den Text und das Bild vertikal */
     width: 100%; /* Volle Breite des Headers */
+    justify-content: space-between; /* Platz zwischen Text und Bild */
+    align-items: center; /* Vertikale Zentrierung der Inhalte */
+    margin-bottom: 15px; /* Abstand unten */
 }
 
 .service-item-header h3 {
@@ -219,13 +217,10 @@ nav ul li a.button-register:hover {
     margin: 0; /* Kein Abstand */
 }
 
-.service-item img {
-    align-self: flex-end; /* Bild wird nach rechts ausgerichtet */
-    margin-bottom: 15px; /* Abstand zum unteren Teil, um eine saubere Trennung zum Text zu gewährleisten */
-   width: 120px !important; /* Neue Breite des Bildes (doppelt so groß wie vorher 60px), erzwungen */
+.service-item-header img {
+    width: 120px; /* Neue Breite des Bildes */
     height: auto; /* Beibehaltung des Seitenverhältnisses */
-    object-fit: contain; /* Beibehaltung des Seitenverhältnisses im definierten Rahmen */
-    content: url('Heizung.png'); /* Ersetzt alle Bilder mit Heizung.png */
+    margin-left: auto; /* Abstand, damit das Bild nach rechts rutscht */
 }
 
 .service-item p {
@@ -240,15 +235,14 @@ nav ul li a.button-register:hover {
     font-weight: 700; /* Fettdruck */
     text-decoration: underline; /* Unterstreichung */
     transition: color 0.3s ease; /* Übergang bei Hover */
-    text-align: left; /* Linksbündig */
+    text-align: left; /* Linksbündige Ausrichtung */
     margin-top: auto; /* Abstand oben */
-    display: flex; /* Flexbox für Icon und Text */
+    display: flex; /* Flexbox für Inhalt */
     align-items: center; /* Vertikale Zentrierung */
 }
 
 .service-item a:hover {
     color: #0056b3; /* Farbe beim Hover */
-    text-decoration: underline; /* Unterstreichung beibehalten */
 }
 
 .service-item a::after {
@@ -256,6 +250,7 @@ nav ul li a.button-register:hover {
     margin-left: 5px; /* Abstand zwischen Text und Pfeil */
     font-size: 1.1em; /* Schriftgröße des Pfeils */
 }
+
 
 /* Allgemeine Stile */
 body {
