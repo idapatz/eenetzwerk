@@ -253,34 +253,23 @@ nav ul li a.button-register:hover {
     font-size: 1.1em; /* Schriftgröße des Pfeils */
 }
 
-/* List Styling */
+/* Entfernt Standard-Aufzählungszeichen */
+/* Entfernt Standard-Aufzählungszeichen */
 ul {
-    list-style: none; /* Entfernt Aufzählungszeichen */
-    padding: 0; /* Kein Innenabstand */
+    list-style: none;
+    padding: 0;
 }
 
+/* Generelle Stile für Listenelemente */
 ul li {
-    margin-bottom: 15px; /* Abstand zwischen Listenelementen */
-    font-size: 1em; /* Schriftgröße */
-    color: #333; /* Textfarbe */
-    display: flex; /* Flexbox für Inhalte */
-    align-items: center; /* Zentrierte Inhalte */
+    margin-bottom: 15px;
+    font-size: 1em;
+    color: #333;
+    display: flex;
+    align-items: center;
 }
 
-ul li::before {
-    color: #333; /* Textfarbe */
-    border: 2px solid #007bff; /* Rahmenfarbe */
-    border-radius: 50%; /* Runde Aufzählung */
-    padding: 3px; /* Innenabstand */
-    margin-right: 10px; /* Abstand zum Text */
-    font-weight: bold; /* Fettdruck */
-    display: inline-block; /* Blockelement */
-    width: 1.5em; /* Breite des Symbols */
-    height: 1.5em; /* Höhe des Symbols */
-    text-align: center; /* Zentrierter Text */
-    line-height: 1.5em; /* Zentrierter Text */
-}
-/* Nur für Listen mit der Klasse 'styled-list' Aufzählungszeichen anzeigen */
+/* Spezifische Stile für 'styled-list' mit Haken im Kreis */
 .styled-list li::before {
     content: '\2713'; /* Unicode für ein Haken-Symbol */
     color: white; /* Farbe des Hakens */
@@ -298,6 +287,7 @@ ul li::before {
     left: 0; /* Setzt den Kreis linksbündig zum Listenelement */
     top: 0; /* Positioniert den Kreis oben */
 }
+
 
 
 /* Footer */
