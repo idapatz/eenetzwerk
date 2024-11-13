@@ -27,6 +27,17 @@ a {
 a:hover {
     text-decoration: underline; /* Unterstreicht Links beim Hover */
 }
+/* Neue Textarten in weiß */
+.white-text-header {
+    color: #ffffff; /* Weiß für Überschrift */
+    font-weight: 700; /* Fettdruck für Überschriften */
+}
+
+.white-text-body {
+    color: #ffffff; /* Weiß für normalen Text */
+    font-weight: 400; /* Normalgewicht für Text */
+}
+
 
 /* Allgemeine Linkstile, z. B. für 'Für Gewerke' */
 nav ul li a {
