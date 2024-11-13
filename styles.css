@@ -818,7 +818,10 @@ ul li {
 .process-section {
     padding: 50px;
     background-color: #2e593f;
+    color: #FFFFFF;
+ 
 }
+
 
 .process-heading {
     text-align: center;
