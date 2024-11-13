@@ -173,20 +173,11 @@ nav ul li a.button-register:hover {
     color: #ffffff; /* Textfarbe beim Hover */
 }
 
-/* Services Section */
-.services {
-    display: flex; /* Flexbox für Ausrichtung */
-    justify-content: space-evenly; /* Gleichmäßiger Abstand zwischen den Kästen */
-    gap: 40px; /* Abstand zwischen Kästen */
-    padding: 40px 50px; /* Innenabstand */
-    flex-wrap: wrap; /* Zeilenumbruch bei kleineren Bildschirmen */
-}
-
 /* Allgemeine Stile für Service-Kästen */
 .service-item {
     display: flex; /* Flexbox für Inhalt */
-    flex-direction: column; /* Elemente in einer Spalte anordnen */
-    align-items: flex-start; /* Linksbündige Ausrichtung der Inhalte */
+    flex-direction: column; /* Vertikale Anordnung */
+    align-items: flex-start; /* Links ausrichten */
     padding: 20px; /* Innenabstand */
     background-color: #e6f9f4; /* Hintergrundfarbe */
     border-radius: 15px; /* Abgerundete Ecken */
@@ -205,9 +196,9 @@ nav ul li a.button-register:hover {
 .service-item-header {
     display: flex; /* Flexbox für Header */
     justify-content: space-between; /* Platz zwischen Überschrift und Bild */
-    align-items: center; /* Vertikale Zentrierung von Überschrift und Bild */
     width: 100%; /* Volle Breite des Headers */
-    margin-bottom: 15px; /* Abstand nach unten */
+    align-items: flex-start; /* Bild und Text auf gleicher Höhe links ausrichten */
+    margin-bottom: 10px; /* Abstand nach unten */
 }
 
 .service-item-header h3 {
@@ -218,9 +209,9 @@ nav ul li a.button-register:hover {
 }
 
 .service-item-header img {
-    width: 60px; /* Breite des Bildes */
+    width: 40px; /* Neue Breite des Bildes */
     height: auto; /* Beibehaltung des Seitenverhältnisses */
-    margin-left: auto; /* Abstand, um das Bild nach rechts zu schieben */
+    margin-left: auto; /* Verschiebt das Bild nach rechts */
 }
 
 .service-item p {
@@ -235,7 +226,7 @@ nav ul li a.button-register:hover {
     font-weight: 700; /* Fettdruck */
     text-decoration: underline; /* Unterstreichung */
     transition: color 0.3s ease; /* Übergang bei Hover */
-    text-align: left; /* Linksbündige Ausrichtung */
+    text-align: left; /* Linksbündig */
     margin-top: auto; /* Abstand oben */
     display: inline-block; /* Inline-Block für den Link */
 }
