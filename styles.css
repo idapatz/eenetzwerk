@@ -27,6 +27,45 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Allgemeine Linkstile, z. B. für 'Für Gewerke' */
+nav ul li a {
+    color: #333;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Login-Button spezifisch stylen */
+.login-button {
+    border: 1px solid #333;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+/* Register-Button spezifisch stylen */
+.register-button {
+    background-color: #00c569;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.register-button:hover {
+    background-color: #008f50;
+}
+
+.login-button:hover {
+    background-color: #f0f0f0;
+}
+
+
 /* Header */
 .header-container {
     padding: 20px 50px;
