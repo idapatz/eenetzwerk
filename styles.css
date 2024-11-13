@@ -5,6 +5,7 @@ body {
     background-color: #ffffff; /* Hintergrundfarbe der Seite */
     color: #333; /* Textfarbe */
     line-height: 1.6; /* Zeilenhöhe */
+     flex-direction: column; /* Stellt sicher, dass die Sektionen untereinander angezeigt werden */
 }
 
 h1, h3 {
