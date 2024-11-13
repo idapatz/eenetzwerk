@@ -188,7 +188,7 @@ nav ul li a.button-register:hover {
     flex-direction: column; /* Vertikale Anordnung */
     align-items: flex-start; /* Linksbündige Ausrichtung der Inhalte */
     padding: 20px; /* Innenabstand */
-    background-color: #e6f9f4; /* Hintergrundfarbe */
+    background-color: #a0c686; /* Hintergrundfarbe */
     border-radius: 15px; /* Abgerundete Ecken */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Schatteneffekt */
     width: 100%; /* Volle Breite */
@@ -219,7 +219,7 @@ nav ul li a.button-register:hover {
 }
 
 .service-link {
-    color: #222;!important; /* Erzwingt die Verwendung dieser Farbe */
+    color: #698F44 ;!important; /* Erzwingt die Verwendung dieser Farbe */
     font-family: 'Roboto', sans-serif;
     font-weight: 700; /* Fettdruck */
     text-decoration: none; /* Entfernt Unterstreichung */
