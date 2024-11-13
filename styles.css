@@ -16,10 +16,7 @@ p, li, a {
     font-weight: 400;
 }
 
-a {
-    color: #333;
-    text-decoration: none;
-}
+a {$1text-decoration: underline;$2}
 
 a:hover {
     text-decoration: underline;
@@ -43,12 +40,7 @@ nav ul {
     padding: 0;
 }
 
-nav ul li a {
-    color: #333;
-    font-weight: 700;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
+nav ul li a {$1text-decoration: underline;$2}
 
 nav ul li a:hover {
     color: #007bff; /* Hover-Effekt für die Links */
@@ -108,15 +100,16 @@ nav ul li a:hover {
 
 /* Allgemeine Stile für Service-Kästen */
 .service-item {
+    display: flex;
     padding: 30px; /* Einheitliches Padding */
     background-color: #e6f9f4;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Einheitlicher Box-Shadow */
-    text-align: center;
     width: 100%;
     max-width: 320px;
     margin: 20px;
     transition: transform 0.3s ease;
+    align-items: center;
 }
 
 .service-item:hover {
@@ -125,7 +118,7 @@ nav ul li a:hover {
 }
 
 .service-item img {
-    margin-bottom: 15px;
+    margin-left: auto;
     width: 50px;
     height: auto;
     content: url('Heizung.png'); /* Ersetzt alle Bilder in den Kästen durch Heizung.png */
@@ -136,20 +129,17 @@ nav ul li a:hover {
     color: #222;
     font-weight: 700;
     font-size: 1.2em;
+    margin-right: auto;
 }
 
 .service-item p {
     margin-bottom: 15px;
     font-size: 1em;
     color: #555;
+    text-align: left;
 }
 
-.service-item a {
-    color: #333;
-    font-weight: 700;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
+.service-item a {$1text-decoration: underline;$2}
 
 .service-item a:hover {
     color: #007bff; /* Farbe beim Hover-Status */
