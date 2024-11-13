@@ -46,7 +46,7 @@ nav ul li a {
 
 /* Register-Button spezifisch stylen */
 .register-button {
-    background-color: #698F44; /* Hintergrundfarbe */
+    background-color: #698F44 !important ; /* Hintergrundfarbe */
     color: #fff; /* Textfarbe */
     padding: 10px 20px; /* Innenabstand */
     border-radius: 5px; /* Abgerundete Ecken */
